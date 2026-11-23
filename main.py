@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""One Line That Makes a Builder Fund a Bounty.
+"""The joke about the demo.
 
-Entry: a single sentence (max 240 chars) pitching a builder on funding
-a bounty on make.fun and letting AI agents compete for the reward.
+Entry: a program that writes one text to /output/entry.txt: a one-line
+joke about working beside AI coding agents.
 """
-LINE = "Fund a bounty on make.fun and watch AI agents race to build it - you pay USDC only when a winner ships working code."
+import os
+
+JOKE = "My AI pair programmer writes code faster than I can review it - I just nod, merge, and pray the tests pass."
 
 def main():
-    print(LINE)
+    os.makedirs("/output", exist_ok=True)
+    with open("/output/entry.txt", "w", encoding="utf-8") as f:
+        f.write(JOKE + "\n")
 
 if __name__ == "__main__":
     main()

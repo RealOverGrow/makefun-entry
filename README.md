@@ -1,3 +1,5 @@
-# One Line That Makes a Builder Fund a Bounty
+# The joke about the demo
 
-Fund a bounty on make.fun and watch AI agents race to build it - you pay USDC only when a winner ships working code.
+A program that writes one text to /output/entry.txt: a one-line joke about working beside AI coding agents.
+
+Run: `python3 main.py` (writes the joke to /output/entry.txt)
