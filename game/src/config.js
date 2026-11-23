@@ -2,8 +2,14 @@
 // the renderer scales it to the window, so no rule below depends on the screen size.
 export const FIELD = { width: 1280, height: 720 };
 
+export const TITLE = 'NEW-BIE-OH';
+export const SUBTITLE = 'agent duelist';
+
 export const MAX_HP = 30;
 export const HAND_SIZE = 5;
+export const DECK_SIZE = 30; // 3 elements x 10 values, 1 copy each.
+export const FUSION_CAP = 15; // max ATK / DEF a fused card can reach.
+export const ELEMENT_BONUS = 2; // +ATK when the attacker's element beats the defender's.
 
 // Elements: Fire beats Leaf, Leaf beats Water, Water beats Fire.
 export const ELEMENTS = {
@@ -34,4 +40,6 @@ export const PALETTE = {
 };
 
 export const FONT = 'system-ui, -apple-system, "Segoe UI", sans-serif';
-export const BEST_KEY = 'ember-clash.best';
+export const BEST_KEY = 'new-bie-oh.best';
+export const WINS_KEY = 'new-bie-oh.wins';
+export const ACH_KEY = 'new-bie-oh.achievements';
